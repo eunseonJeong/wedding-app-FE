@@ -1,18 +1,16 @@
-import type { Config } from "tailwindcss";
-
-export default {
+module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        serif: ["Noto Serif KR", "serif"],
+        sans: ["Noto Sans KR", "sans-serif"],
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};

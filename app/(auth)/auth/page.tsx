@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, FormEvent, ChangeEvent } from "react";
-import Head from "next/head";
 
 // 폼 데이터 타입 정의
 interface FormData {
